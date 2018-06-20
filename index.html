@@ -8,24 +8,15 @@
   </head>
 
   <body>
-    <script id=login>
-    'use strict';
 
-    let id = prompt('Who\'s there?');
+    <script id=multiternary>
+      let login = prompt("Who're you?")
 
-      if (id == '' || id == null) {
-        alert ('Canceled.')
-      } else if (id == 'Admin') {
-          let pw = prompt('Password?')
-            if(pw == 'TheMaster') {
-              alert('Welcome!')
-            } else if (pw == '' || pw == null){
-              alert('Canceled.')
-            } else {alert ('Wrong password')
-          }
-        } else {alert ('I don\'t know you')
-      }
-    </script>
+      login == ("Employee") ? alert("Hello") :
+      login == ()"Director" ?) alert("Greetings") :
+      login == ('') ? alert("No login") :
+      login == null ? alert("");
 
+      </script>
   </body>
 </html>
