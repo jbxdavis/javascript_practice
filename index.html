@@ -8,16 +8,18 @@
   </head>
 
   <body>
-    <script id=consolelog>
-    let id = prompt('Who\'s there?')
+    <script id=login>
+    'use strict';
 
-      if (id = '') {
+    let id = prompt('Who\'s there?');
+
+      if (id == '' || id == null) {
         alert ('Canceled.')
-      } else if (id = 'Admin') {
+      } else if (id == 'Admin') {
           let pw = prompt('Password?')
-            if(pw = 'TheMaster') {
+            if(pw == 'TheMaster') {
               alert('Welcome!')
-            } else if (pw = ''){
+            } else if (pw == '' || pw == null){
               alert('Canceled.')
             } else {alert ('Wrong password')
           }
