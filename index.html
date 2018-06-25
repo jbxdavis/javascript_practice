@@ -2,28 +2,22 @@
   <html>
   <head>
       <meta charset ="utf-8">
-      <title>Function Scope Example</title>
+      <title>Function Library Example</title>
+      <style>
+        input {
+            font-size: 2em;
+            margin: 10px, 1px, 0;
+        }
+      </style>
     </head>
   <body>
 
+    <input class="numberinput" type = "text">
+    <p></p>
+
     <script>
-    let x = 1;
-
-      function a() {
-          let y = 2;
-          output(z);
-      }
-
-      function b() {
-          let z = 3;
-          output(y);
-      }
-
-      function output(value) {
-        var para = document.createElement('p');
-        document.body.appendChild(para);
-        para.textContent = 'Value: ' + value;
-      }
+      let input = document.querySelection(.numberInput);
+      let para = document.querySelector('p');
 
       </script>
     </body>
