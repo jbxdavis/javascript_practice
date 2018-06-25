@@ -13,6 +13,7 @@
   <body>
 
     <input class="numberInput" type = "text">
+    <button name="Button" type="button">
     <p></p>
 
     <script>
@@ -35,7 +36,7 @@
         return num;
       }
 
-      input.onchange = function() {
+      input.onClick(Button) = function() {
         let num = input.value;
         if (isNaN(num)) {
           para.textContent = "You need to enter a number!";
