@@ -1,22 +1,28 @@
-<!DOCTYPE html>
-<html lang = "en" dir="ltr">
-
+<DOCTYPE html>
+  <html>
   <head>
-    <meta charset="utf-8">
-    <title>jbxdavis's Javascript Practice</title>
-    <link href="styles.css" type="text/css" rel="stylesheet"/>
-  </head>
-
+      <meta charset ="utf-8">
+      <title>Function Scope Example</title>
+    </head>
   <body>
 
-    <script id=multiternary>
-      let login = prompt("Who're you?");
+    <script>
+    let x = 1;
 
-      login == ("Employee") ? alert("Hello") :
-      login == ("Director") ? alert("Greetings") :
-      login == ('') ? alert("No login") :
-      alert("");
+      function a() {
+          let y = 2;
+      }
+
+      function b() {
+          let z = 3;
+      }
+
+      function output(value) {
+        var para = document.createElement('p');
+        document.body.appendChild(para);
+        para.textContent = 'Value: ' + value;
+      }
 
       </script>
-  </body>
-</html>
+    </body>
+  </html>
