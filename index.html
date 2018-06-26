@@ -2,51 +2,28 @@
   <html>
   <head>
       <meta charset ="utf-8">
-      <title>Function Library Example</title>
-      <style>
-        input {
-            font-size: 2em;
-            margin: 10px, 1px, 0;
-        }
-      </style>
+      <title>Fundamentals 2 Practice</title>
     </head>
   <body>
 
-    <input class="numberInput" type = "text">
-    <button name="Button" type="button">
-    <p></p>
-
     <script>
-      let input = document.querySelector('.numberInput');
-      let para = document.querySelector('p');
 
-      function squared(num) {
-        return num * num;
+      function add7(num) {
+        console.log num + 7;
       }
 
-      function cubed(num) {
-        return num*num*num;
-      }
-      function factorial(num){
-        var x = num;
-        while (x > 1) {
-          num *= x-1;
-          x--;
-        }
-        return num;
+      function multiply(num1,num2) {
+        console.log num1 * num2;
       }
 
-      input.onClick(Button) = function() {
-        let num = input.value;
-        if (isNaN(num)) {
-          para.textContent = "You need to enter a number!";
-        } else {
-          para.textContent =  num + " sqaured is " + squared(num) + ". " +
-                              num + " cubed is " + cubed(num) + ". " +
-                              num + " factorial is " + factorial(num) + ".";
-        }
+      function capitalize(text) {
+        console.log capitalize(lowercase(text));
       }
 
-      </script>
+      function lastletter(text2) {
+        console.log text2.slice(-1);
+      }
+        </script>
+
     </body>
   </html>
